@@ -1,1 +1,1 @@
-# EKS-Pod-Identity-And-RDSwithSecretManager
+# EKS-Pod-Identity-And-RDSwithSecretManager-Aws
