@@ -623,9 +623,3 @@ resource "aws_iam_role_policy_attachment" "policy_attachment_to_role" {
   policy_arn = aws_iam_policy.iam_policy_podidentity_secretmanager.arn
 }
 
-resource "aws_eks_pod_identity_association" "eks_podidentity_association_secretsmanager" {
-  cluster_name    = aws_eks_cluster.eksdemo.name
-  namespace       = "mederma"
-  service_account = "mederma-sa"
-  role_arn        = aws_iam_role.pod_identity_role_secretmanager.arn
-}
