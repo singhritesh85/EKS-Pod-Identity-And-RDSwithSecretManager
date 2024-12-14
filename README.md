@@ -3,7 +3,7 @@
 
 In the first part of this project, I had demonstrated the PostgreSQL RDS and its credentials was stored in AWS Secrets Manager. First, I logged-in with the initial Users Credentials which was stored in the Secrets Manager. Then for demonstration purpose I rotated the Secrets Manager secret (password). However, you should rotate it as per your organisation. After Rotation the Password for RDS had been changed and user was able to logged-in using the new credentials as shown in the screenshot attached below.
 <br><br/>
-![image](https://github.com/user-attachments/assets/a07df01a-d8fe-44f7-8fd5-41763e5d3633)
+![image](https://github.com/user-attachments/assets/6ffc41cb-c378-47bf-aadc-c0b08fa220a3)
 
 In the second part of this project, I accessed the S3 bucket from the kubernetes Pod present in the EKS Cluster using the Pod Identity. To achieve this using Pod Identity, you should install EKS Pod Identity add on and attach the proper IAM Role with specific namespace and service account in which the pod was existed to the EKS Cluster. For this project I had attached an IAM Role to provide the privilege of Full S3 Bucket and namespace dexter and service account dexter-sa. I had not used the default service account of the namespace (whenever you create a namespace a service account with the name default will also be created).   
 <br><br/>
